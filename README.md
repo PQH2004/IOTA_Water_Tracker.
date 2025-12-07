@@ -2,7 +2,6 @@
 
 A simple hydration tracking application that stores daily water intake logs on **IOTA EVM Testnet** and uses **Google Gemini AI** to provide smart health suggestions based on the user’s drinking habits.
 
-![banner](./screenshot.png) <!-- optional image -->
 
 ---
 
