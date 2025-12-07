@@ -1,44 +1,47 @@
 # IOTA Water Tracker
 
-Ứng dụng theo dõi lượng nước uống hằng ngày và ghi nhận dữ liệu lên **IOTA EVM Testnet**, đồng thời sử dụng Gemini AI để đưa ra phân tích sức khỏe và gợi ý phù hợp cho người dùng.
+A simple hydration tracking application that stores daily water intake logs on **IOTA EVM Testnet** and uses **Google Gemini AI** to provide smart health suggestions based on the user’s drinking habits.
 
 ![banner](./screenshot.png) <!-- optional image -->
 
 ---
 
-## 🚀 Tính năng chính
-- Theo dõi lượng nước hàng ngày
-- Ghi lịch sử lên IOTA-EVM (transaction lưu data)
-- Biểu đồ thống kê bằng Recharts
-- Gemini AI phân tích và đưa ra gợi ý sức khoẻ
-- UI React + TypeScript + Vite
+## 🚀 Features
+- Track daily water intake
+- Persist logs on IOTA-EVM using on-chain transactions
+- Health insights powered by Gemini AI
+- Daily statistics & charts with Recharts
+- Modern frontend stack (React 19 + Vite + TypeScript)
 
 ---
 
-## 🧩 Công nghệ
-| Thành phần | Công nghệ |
+## 🧩 Tech Stack
+
+| Component | Technology |
 |---|---|
-| Frontend | React 19, Vite |
+| Frontend | React 19 + Vite |
 | Blockchain | IOTA-EVM Testnet |
-| Ví Web | TanglePay / MetaMask |
+| Wallet | TanglePay / MetaMask |
 | AI | Google Gemini |
-| Ngôn ngữ | TypeScript |
+| Language | TypeScript |
 
 ---
 
-## 🔗 Ví hỗ trợ
-Ứng dụng này **không kết nối trực tiếp với IOTA Desktop/Firefly**, mà sử dụng ví có hỗ trợ chuẩn Web3/EVM:
+## 🔗 Wallet Support (Important)
 
-### Ví đề nghị
-- **TanglePay Browser Extension**
-- MetaMask (cần add network)
+This app **does NOT connect directly to IOTA Desktop / Firefly**, because Firefly does not expose a Web3/EVM provider.
 
-### Không hỗ trợ
-- Firefly desktop (không inject Web3 provider)
+Supported wallets:
+- ✔ TanglePay Browser Extension (recommended)
+- ✔ MetaMask
+
+Not supported:
+- ✘ IOTA Desktop / Firefly  
+(no injected Web3 provider)
 
 ---
 
-## 🛠 Cài đặt và chạy
+## 🛠 Installation
 
 ```bash
 npm install
